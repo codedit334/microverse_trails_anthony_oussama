@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <Header>
+      <h1 id="title">Top Fives Cars</h1>
+      </Header>
+
+    <p id="description">This is a survey to detaimine the best five car models and their favourite colours.</p>
+<form id="survey-form" style="display:flex; flex-direction:column;margin:auto;width:300px;">
+  <label id="name-label">Name: </label>
+  <input type="text" id="name" placeholder="John Doe" required/>
+  <label id="email-label">Email: </label>
+  <input type="email" id="email" placeholder="johndoe@doe.com" required/>
+  <label id="number-label">Age: </label>
+  <input type="number" min="16" max="99" id="number" placeholder="18" />
+  <label>Select Car Model: </label>
+  <select id="dropdown" required style="width:100px;">
+    <option value="toyota">Toyota</option>
+    <option value="nissan">Nissan</option>
+    <option value="tesla">Tesla</option>
+  </select>
+  <Label>Which is your favourite colour?</label>
+  <div>
+  <input type="radio" name="colour" value="white"/>
+  <label>White</label>
+  <input type="radio" name="colour" value="black"/>
+  <label>Black</label>
+  </div>
+  <label>Add features:</label>
+  <div style="width:80px;">
+<input type="checkbox" value="electric"/><label>Electric</label>
+<input type="checkbox" value="camera"/><label>Camera</label>
+</div>
+<label>Comments</label>
+<textarea name="comments" rows="5" cols="5"></textarea>
+<input type="submit" id="submit" style="width:80px;margin-top:20px;"/>
+</form>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
